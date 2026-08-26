@@ -1,0 +1,478 @@
+/* General Page */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+
+/* Header */
+header{
+    background-color:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:50px;
+    margin:10px;
+}
+
+/* Navigation Bar */
+nav{
+    background-color:#d10000;
+    padding:15px;
+}
+
+main{
+    flex:1;
+} 
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    margin:20px;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* Main Table */
+table{
+    width:100%;
+    padding:20px;
+}
+
+td{
+    width:50%;
+    text-align:center;
+    vertical-align:top;
+    padding:30px;
+}
+
+/* Logos */
+img{
+    height:180px;
+    margin-bottom:15px;
+}
+
+/* Headings */
+h2{
+    color:#111;
+    font-size:35px;
+}
+
+/* Paragraphs */
+p{
+    font-size:18px;
+    line-height:1.6;
+    color:#333;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ========================= */
+/* MARVEL HEROES PAGE CSS    */
+/* ========================= */
+
+/* ===============================
+   GENERAL
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#e61e1e;
+}
+
+/* ===============================
+   HEADER
+================================== */
+
+header{
+    background-color:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+/* ===============================
+   NAVIGATION BAR
+================================== */
+
+nav{
+    background-color:#c40000;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    margin:0 20px;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* ===============================
+   PAGE TITLE
+================================== */
+
+h1{
+    text-align:center;
+}
+
+/* ===============================
+   CHARACTER GRID
+================================== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:25px;
+    padding:40px;
+}
+
+/* ===============================
+   CHARACTER CARD
+================================== */
+
+.card{
+    background:rgb(80, 3, 3);
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* ===============================
+   CHARACTER IMAGE
+================================== */
+
+.card img{
+    width:180px;
+    height:240px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* ===============================
+   CHARACTER NAME
+================================== */
+
+.card h2{
+    color:#e4e3e3;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+/* ===============================
+   SUBHEADINGS
+================================== */
+
+.card h4{
+    color:#ebe4e4;
+    margin-bottom:8px;
+    font-size:15px;
+}
+
+/* ===============================
+   DESCRIPTION
+================================== */
+
+.card p{
+    color:#f7ebeb;
+    font-size:15px;
+    line-height:1.5;
+    margin-top:10px;
+}
+
+/* ===============================
+   FOOTER
+================================== */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ===============================
+   DC HEROES PAGE
+================================== */
+
+body.dc-page{
+    background-color:#141414;
+}
+
+/* Header */
+body.dc-page header{
+    background-color:#001f54;
+}
+
+/* Navigation */
+body.dc-page nav{
+    background-color:#003b8e;
+}
+
+/* Cards */
+body.dc-page .card{
+    background-color:#242424;
+    color:white;
+}
+
+/* Character Name */
+body.dc-page .card h2{
+    color:#4da6ff;
+}
+
+/* Real Name & First Appearance */
+body.dc-page .card h4{
+    color:#d9d9d9;
+}
+
+/* Description */
+body.dc-page .card p{
+    color:#f2f2f2;
+}
+
+/* Hover Effect */
+body.dc-page .card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 8px 20px rgba(77,166,255,0.6);
+}
+/* ===================================
+   MARVEL VILLAINS PAGE
+=================================== */
+
+body.marvel-villains{
+    background-color:#1b1b1b;
+}
+
+/* Header */
+body.marvel-villains header{
+    background-color:#600000;
+}
+
+/* Navigation */
+body.marvel-villains nav{
+    background-color:#8B0000;
+}
+
+/* Cards */
+body.marvel-villains .card{
+    background-color:#2c2c2c;
+    color:white;
+}
+
+/* Character Name */
+body.marvel-villains .card h2{
+    color:#ff4d4d;
+}
+
+/* Real Name & First Appearance */
+body.marvel-villains .card h4{
+    color:#d9d9d9;
+}
+
+/* Description */
+body.marvel-villains .card p{
+    color:#f2f2f2;
+}
+
+/* Hover Effect */
+body.marvel-villains .card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 8px 20px rgba(255,0,0,0.6);
+}
+
+/* ===============================
+   DC VILLAINS PAGE
+================================== */
+
+body.dc-villains{
+    background-color:#141414;
+}
+
+/* Header */
+body.dc-villains header{
+    background-color:#001f54;
+}
+
+/* Navigation */
+body.dc-villains nav{
+    background-color:#003b8e;
+}
+
+/* Cards */
+body.dc-villains .card{
+    background-color:#242424;
+    color:white;
+}
+
+/* Character Name */
+body.dc-villains .card h2{
+    color:#4da6ff;
+}
+
+/* Subheadings */
+body.dc-villains .card h4{
+    color:#d9d9d9;
+}
+
+/* Description */
+body.dc-villains .card p{
+    color:#f2f2f2;
+}
+
+/* Hover Effect */
+body.dc-villains .card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 8px 20px rgba(77,166,255,0.6);
+}
+
+
+/*==================================
+APPLICATION FORM
+==================================*/
+
+.form-container{
+    width:60%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.form-container h2{
+    text-align:center;
+    color:#c40000;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+/* Main labels */
+.form-container label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* Text boxes, dropdowns and textarea */
+.form-container input[type=text],
+.form-container input[type=email],
+.form-container input[type=tel],
+.form-container input[type=date],
+.form-container input[type=number],
+.form-container select,
+.form-container textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.form-container textarea{
+    resize:vertical;
+}
+
+/* Section headings */
+.form-container p{
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+/* Radio buttons & Checkboxes */
+.form-container input[type=radio],
+.form-container input[type=checkbox]{
+    margin-right:8px;
+    margin-bottom:12px;
+    transform:scale(1.2);
+}
+
+/* Keep radio/checkbox labels beside the buttons */
+.form-container input[type=radio] + label,
+.form-container input[type=checkbox] + label{
+    display:inline;
+    font-size:17px;
+    font-weight:normal;
+}
+
+/* File upload */
+.form-container input[type=file]{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+/* Submit button */
+.form-container input[type=submit]{
+    background:#c40000;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.form-container input[type=submit]:hover{
+    background:#990000;
+}
+
+/* Reset button */
+.form-container input[type=reset]{
+    background:#0047ab;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.form-container input[type=reset]:hover{
+    background:#00337a;
+}

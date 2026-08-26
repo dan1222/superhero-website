@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Company Application</title>
+
+    <link rel="stylesheet" href="../static/Form.css">
+</head>
+
+<body>
+
+  
+
+<header>
+    <h1>Marvel & DC Job Application</h1>
+
+    <nav>
+        <a href="heroes.html">Home</a>
+             <a href="marvelheroes.html">Marvel Heroes</a>
+             <a href="marvelvillains.html">Marvel Villains</a>
+             <a href="dcheroes.html">DC Heroes</a>
+             <a href="dcvillains.html">DC Villains</a>
+             <a href="Form.html" class="active">Application</a>
+            
+    </nav>
+</header>
+
+<div class="form-container">
+
+<h2>Apply to Join Marvel or DC</h2>
+
+<form>
+
+<label for="name">Full Name</label>
+<input type="text" id="name" required>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" required>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone">
+
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob">
+
+<label for="company">Which Company?</label>
+
+<select id="company">
+    <option>Marvel Comics</option>
+    <option>DC Comics</option>
+</select>
+
+<label for="job">Position Applying For</label>
+
+<select id="job">
+    <option>Comic Book Writer</option>
+    <option>Graphic Designer</option>
+    <option>Character Artist</option>
+    <option>Storyboard Artist</option>
+    <option>Film Producer</option>
+    <option>Animator</option>
+    <option>Marketing Team</option>
+    <option>Web Developer</option>
+</select>
+
+<p>Employment Type</p>
+
+<input type="radio" id="full" name="employment">
+<label for="full">Full-Time</label>
+
+<input type="radio" id="part" name="employment">
+<label for="part">Part-Time</label>
+
+<br><br>
+
+<label>Your Skills</label><br>
+
+<input type="checkbox" id="drawing">
+<label for="drawing">Drawing</label><br>
+
+<input type="checkbox" id="writing">
+<label for="writing">Creative Writing</label><br>
+
+<input type="checkbox" id="coding">
+<label for="coding">Coding</label><br>
+
+<input type="checkbox" id="editing">
+<label for="editing">Video Editing</label><br>
+
+<input type="checkbox" id="communication">
+<label for="communication">Communication</label>
+
+<br><br>
+
+<label for="experience">Years of Experience</label>
+<input type="number" id="experience" min="0" max="50">
+
+<label for="about">
+Why would you like to work for Marvel or DC?
+</label>
+
+<textarea id="about" rows="6"></textarea>
+
+<label for="hero">
+Favourite Superhero
+</label>
+
+<input type="text" id="hero">
+
+<label for="cv">
+Upload Your CV
+</label>
+
+<input type="file" id="cv">
+
+<br><br>
+
+<input type="checkbox" required>
+I confirm that all information is correct.
+
+<br><br>
+
+<input type="submit" value="Submit Application">
+
+<input type="reset" value="Clear Form">
+
+</form>
+
+</div>
+
+<footer>
+
+<p>© 2026 Superheroes Website</p>
+
+</footer>
+
+</body>
+</html>

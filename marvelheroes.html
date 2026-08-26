@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Heroes</title>
+
+    <link rel="stylesheet" href="../static/Marvel.css">
+</head>
+
+<body>
+
+   
+
+    <!-- Header -->
+    <header>
+        <h1>Top 10 Marvel Heroes</h1>
+
+        <nav>
+            <a href="heroes.html">Home</a>
+                <a href="marvelheroes.html" class="active">Marvel Heroes</a>
+               <a href="marvelvillains.html">Marvel Villains</a>
+               <a href="dcheroes.html">DC Heroes</a>
+               <a href="dcvillains.html">DC Villains</a>
+               <a href="Form.html">Application</a>
+        </nav>
+    </header>
+
+    <!-- Character Grid -->
+    <section class="grid">
+
+        <!-- Spider-Man -->
+        <div class="card">
+            <img src="../static/images/SM.png" alt="Spider-Man">
+            <h2>Spider-Man</h2>
+            <h4>Real Name: Peter Parker</h4>
+            <h4>First Appearance: 1962</h4>
+            <p>
+                Spider-Man gained his powers after being bitten by a radioactive
+                spider. He protects New York City while living by the motto,
+                "With great power comes great responsibility."
+            </p>
+             {% if username %}
+
+<form action="/rate/Spider-Man" method="POST">
+
+    <label>Rate Spider-Man:</label>
+
+    <select name="rating">
+
+        <option value="1" {% if ratings.get("Spider-Man") == 1 %}selected{% endif %}>
+            ⭐ 1
+        </option>
+
+        <option value="2" {% if ratings.get("Spider-Man") == 2 %}selected{% endif %}>
+            ⭐⭐ 2
+        </option>
+
+        <option value="3" {% if ratings.get("Spider-Man") == 3 %}selected{% endif %}>
+            ⭐⭐⭐ 3
+        </option>
+
+        <option value="4" {% if ratings.get("Spider-Man") == 4 %}selected{% endif %}>
+            ⭐⭐⭐⭐ 4
+        </option>
+
+        <option value="5" {% if ratings.get("Spider-Man") == 5 %}selected{% endif %}>
+            ⭐⭐⭐⭐⭐ 5
+        </option>
+
+    </select>
+
+    <button type="submit">Rate</button>
+
+</form>
+
+{% else %}
+
+<p>Log in to rate this hero.</p>
+
+{% endif %}
+        </div>
+
+        <!-- Iron Man -->
+        <div class="card">
+            <img src="../static/images/IM.webp" alt="Iron Man">
+            <h2>Iron Man</h2>
+            <h4>Real Name: Tony Stark</h4>
+            <h4>First Appearance: 1963</h4>
+            <p>
+                A billionaire inventor who created a powerful suit of armour.
+                Iron Man is one of the founding members of the Avengers.
+            </p>
+
+             {% if username %}
+
+    <form action="/rate/Iron-Man" method="POST">
+
+        <label>Rate Iron-Man:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+        <!-- Captain America -->
+        <div class="card">
+            <img src="../static/images/CA.webp" alt="Captain America">
+            <h2>Captain America</h2>
+            <h4>Real Name: Steve Rogers</h4>
+            <h4>First Appearance: 1941</h4>
+            <p>
+                Steve Rogers became a super soldier during World War II and
+                fights with his famous vibranium shield.
+            </p>
+
+             {% if username %}
+
+    <form action="/rate/Captain America" method="POST">
+
+        <label>Rate Captain America:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+        <!-- Thor -->
+        <div class="card">
+            <img src="../static/images/Thor.webp" alt="Thor">
+            <h2>Thor</h2>
+            <h4>Real Name: Thor Odinson</h4>
+            <h4>First Appearance: 1962</h4>
+            <p>
+                Thor is the Asgardian God of Thunder who uses the enchanted
+                hammer Mjolnir to defend Earth and Asgard.
+            </p>
+
+             {% if username %}
+
+    <form action="/rate/Thor" method="POST">
+
+        <label>Rate Thor:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+        <!-- Hulk -->
+        <div class="card">
+            <img src="../static/images/Hulk.png" alt="Hulk">
+            <h2>Hulk</h2>
+            <h4>Real Name: Bruce Banner</h4>
+            <h4>First Appearance: 1962</h4>
+            <p>
+                Bruce Banner transforms into the Hulk whenever he becomes angry,
+                giving him incredible strength and durability.
+            </p>
+
+             {% if username %}
+
+    <form action="/rate/Hulk" method="POST">
+
+        <label>Rate Hulk:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+        <!-- Wolverine -->
+        <div class="card">
+            <img src="../static/images/Wolverine.jpg" alt="Wolverine">
+            <h2>Wolverine</h2>
+            <h4>Real Name: Logan</h4>
+            <h4>First Appearance: 1974</h4>
+            <p>
+                Wolverine is a mutant with an incredible healing factor and
+                razor-sharp adamantium claws.
+            </p>
+
+             {% if username %}
+
+    <form action="/rate/Wolverine" method="POST">
+
+        <label>Rate Wolverine:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+        <!-- Black Panther -->
+        <div class="card">
+            <img src="../static/images/BP.webp" alt="Black Panther">
+            <h2>Black Panther</h2>
+            <h4>Real Name: T'Challa</h4>
+            <h4>First Appearance: 1966</h4>
+            <p>
+                The king of Wakanda, Black Panther protects his nation using
+                advanced technology and enhanced abilities.
+            </p>
+
+             {% if username %}
+
+    <form action="/rate/Black Panther" method="POST">
+
+        <label>Rate Black Panther:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+        <!-- Doctor Strange -->
+        <div class="card">
+            <img src="../static/images/DS.jpg" alt="Doctor Strange">
+            <h2>Doctor Strange</h2>
+            <h4>Real Name: Stephen Strange</h4>
+            <h4>First Appearance: 1963</h4>
+            <p>
+                Once a brilliant surgeon, Doctor Strange became the Sorcerer
+                Supreme and protects the world from magical threats.
+            </p>
+
+             {% if username %}
+
+    <form action="/rate/Doctor Strange" method="POST">
+
+        <label>Rate Doctor Strange:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+        <!-- Scarlet Witch -->
+        <div class="card">
+            <img src="../static/images/SW.jpg" alt="Scarlet Witch">
+            <h2>Scarlet Witch</h2>
+            <h4>Real Name: Wanda Maximoff</h4>
+            <h4>First Appearance: 1964</h4>
+            <p>
+                Scarlet Witch possesses powerful magic and reality-warping
+                abilities, making her one of Marvel's strongest heroes.
+            </p>
+             {% if username %}
+
+    <form action="/rate/Scarlet Witch" method="POST">
+
+        <label>Rate Scarlet Witch:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+        <!-- Captain Marvel -->
+        <div class="card">
+            <img src="../static/images/CM.webp" alt="Captain Marvel">
+            <h2>Captain Marvel</h2>
+            <h4>Real Name: Carol Danvers</h4>
+            <h4>First Appearance: 1968</h4>
+            <p>
+                Captain Marvel is one of the most powerful heroes in the Marvel
+                Universe with incredible strength, speed and energy powers.
+            </p>
+
+             {% if username %}
+
+    <form action="/rate/Captain Marvel" method="POST">
+
+        <label>Rate Captain Marvel:</label>
+
+        <select name="rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐⭐ 2</option>
+            <option value="3">⭐⭐⭐ 3</option>
+            <option value="4">⭐⭐⭐⭐ 4</option>
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        </select>
+
+        <button type="submit">Rate</button>
+
+    </form>
+
+    {% else %}
+
+    <p>Log in to rate this hero.</p>
+
+    {% endif %}
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Superheroes Website</p>
+    </footer>
+
+</body>
+</html>
